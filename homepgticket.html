@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 700px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .trip-type, .fare-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .trip-type label, .fare-options label {
+            cursor: pointer;
+            font-weight: 500;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .trip-type input[type="radio"], .fare-options input[type="radio"] {
+            display: none;
+        }
+
+        .trip-type input[type="radio"]:checked + label,
+        .fare-options input[type="radio"]:checked + label {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .input-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-group label {
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-group h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        
+        .input-group p {
+            font-size: 0.9em;
+            color: gray;
+        }
+
+        .input-group select,
+        .input-group input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .search-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 18px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Trip Type Section -->
+        <div class="trip-type">
+            <input type="radio" id="oneway" name="trip" checked>
+            <label for="oneway">One Way</label>
+            <input type="radio" id="roundtrip" name="trip">
+            <label for="roundtrip">Round Trip</label>
+            <input type="radio" id="multicity" name="trip">
+            <label for="multicity">Multi City</label>
+        </div>
+
+        <!-- From Section -->
+        <div class="input-group">
+            <label>From</label>
+            <h3>Delhi</h3>
+            <p>DEL, Delhi Airport India</p>
+        </div>
+
+        <!-- To Section -->
+        <div class="input-group">
+            <label>To</label>
+            <h3>Bengaluru</h3>
+            <p>BLR, Bengaluru International Airport</p>
+        </div>
+
+        <!-- Departure Date -->
+        <div class="input-group">
+            <label>Departure</label>
+            <input type="date" value="2024-10-29">
+        </div>
+
+        <!-- Return Date Placeholder -->
+        <div class="input-group">
+            <label>Return</label>
+            <input type="date" placeholder="Tap to add a return date for bigger discounts" disabled>
+        </div>
+
+        <!-- Travellers and Class Selection -->
+        <div class="input-group">
+            <label>Travellers & Class</label>
+            <select>
+                <option>1 Traveller - Economy/Premium Economy</option>
+                <option>2 Travellers - Economy</option>
+                <option>3 Travellers - Business</option>
+            </select>
+        </div>
+
+        <!-- Fare Options -->
+        <div class="fare-options">
+            <input type="radio" id="regular" name="fare" checked>
+            <label for="regular">Regular</label>
+            <input type="radio" id="student" name="fare">
+            <label for="student">Student</label>
+            <input type="radio" id="senior" name="fare">
+            <label for="senior">Senior Citizen</label>
+            <input type="radio" id="armed" name="fare">
+            <label for="armed">Armed Forces</label>
+            <input type="radio" id="doctor" name="fare">
+            <label for="doctor">Doctor and Nurses</label>
+        </div>
+
+        <!-- Search Button -->
+        <button class="search-button">SEARCH</button>
+    </div>
+</body>
+</html>

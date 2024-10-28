@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 14px;
+    background: #f2f2f2;
+}
+.container
+{
+    background: white;
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid rgb(208, 12, 12);
+    box-shadow: 0 0 7px 5px rgba(0,0,0,0.5);
+}
+.container h2
+{
+    font-size: 24px;
+    line-height: 24px;
+    padding: 30px;
+    text-align: center;
+}
+.input-name
+{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+}
+.lock
+{
+    padding: 8px 11px;
+}
+.name
+{
+    width: 45%;
+    padding: 8px 0px 8px 40px;
+}
+.input-name span
+{
+    margin-left: 35px;
+}
+.text-name
+{
+    width: 100%;
+    padding: 8px 0px 8px 40px;
+}
+.input-name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: rgb(208, 12, 12);
+    border-right: 1px solid #cccccc;
+}
+.email
+{
+    padding: 8px;
+}
+.text-name , .name
+{
+    border: 1px solid #cccccc;
+    outline: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup Form</h2>
+        <div class="Form-container">
+            <form>
+                <div class="input-name">
+                    <i class="fa fa-user-circle"></i>
+                    <input type="text" placeholder="First Name" class="name">
+                    <span>
+                        <i class="fa fa-user-circle"></i>
+                        <input type="text" placeholder="Last Name" class="name">
+                    </span>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" class="text-name">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password" class="text-name">
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" class="text-name">
+                </div>
+                <div class="input-name">
+                    <input type="radio" class="radio-button" name="r1">
+                    <label>Male</label>
+                    <input type="radio" class="radio-button" name="r1">
+                    <label>Female</label>
+                </div>
+                <div class="input-name">
+                    <select class="country">
+                        <option>Select A Place</option>
+                        <option>Hyderabad</option>
+                        <option>Vijayawada</option>
+                        <option>Benguluru</option>
+                        <option>Chennai</option>
+                        <option>Kerala</option>
+                    </select>
+                    <div class="arrow"></div>
+                </div>
+                <div class="input-name">
+                    <input type="checkbox" class="check-button">
+                    <label>I Accept All Terms And Conditions</label>
+                </div>
+                <div class="input-name">
+                    <input type="submit" class="check-button" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

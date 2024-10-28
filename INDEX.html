@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>railXplorer login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/train-with-red-background-picture-train-front_1187092-168004.jpg">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://media.istockphoto.com/id/1414885184/vector/abstract-red-background.jpg?s=612x612&w=0&k=20&c=bNxsGkRrjLuhyqOfLKdq95WYXNEksYZ2m9Ja3lNvFuA=);
+            background-size:100%;
+            height: 100vh;
+        }
+        
+        .navbar{
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+        }
+        
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+        
+        .logo{
+            color: #fefdfb;
+            font-size: 40px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+            margin-top: 5px
+        }
+        
+        .menu{
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+        
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+        
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 25px;
+            transition: 0.4s ease-in-out;
+        }
+        ul li i{
+            font-size: 25px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Arial;
+            transition: 0.4s ease-in-out;
+        }
+        ul li i .circle{
+            font-size: 250px;
+        }
+        
+        ul li a:hover{
+            color: #ff0000d2;
+        }
+        ul li i:hover{
+            color: red;
+        }
+        
+        .search{
+            width: 330px;
+            float: left;
+            margin-left: 270px;
+        }
+        
+        .srch{
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #171616;
+            margin-top: 13px;
+            color: #fff;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        
+        .btn{
+            width: 100px;
+            height: 40px;
+            background:rgb(233, 9, 9);
+            border: 2px solid #0e0c0c;
+            margin-top: 13px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: #0c0c0c;
+        }
+        
+        .btn:focus{
+            outline: none;
+        }
+        
+        .srch:focus{
+            outline: none;
+        }
+        
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #fff;
+            position: relative;
+        }
+        
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+        
+        .content h1{
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-left: 20px;
+            margin-top: 8%;
+            letter-spacing: 2px;
+        }
+        
+        .content .cn{
+            width: 160px;
+            height: 40px;
+            background: red;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+            
+        }
+        
+        .content .cn a{
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+        
+        .cn:hover{
+            background-color: #9b0000;
+        }
+        
+        .content span{
+            color: rgb(156, 6, 6);
+            font-size: 65px
+        }
+        .liw{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .icons a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .icons ion-icon{
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+        .icons ion-icon:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo" style="color: black;">rail<span style="color: red;">X</span>plorer</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li style="size: 100;"><a href="#">ABOUT</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="http://127.0.0.1:5500/facilities.html">FACILITIES</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#">CONTACT</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="http://127.0.0.1:5500/LOGGINGIN.html"><i class="fa fa-user-circle">Login</i></a></li>
+                </ul>
+            </div>
+
+            
+
+        </div> 
+        <br>
+        <br><br><br>
+        <div class="content">
+            <h1 style="color: rgb(0, 0, 0);"> NAVIGATE <span style="color: rgb(20, 19, 19);">  THE </span>  <span style="color: red;">RAILWAYS</span><br>ANYTIME , ANYWHERE</h1>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

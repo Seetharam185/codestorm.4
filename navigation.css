@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 80%;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-section {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.facilities-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between each facility card */
+    width: 80%;
+    max-width: 1200px;
+}
+
+.facility {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 30%; /* Adjust width to fit three divs in the container */
+    transition: transform 0.2s ease;
+}
+
+.facility:hover {
+    transform: scale(1.05);
+}
+
+.facility img {
+    width: 100%;
+    height: auto;
+}
+
+.facility h3 {
+    color: #007bff;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.facility p {
+    color: #777;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+
+.facilities-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* or use gap if preferred */
+    align-items: center;
+}
+
+.facility {
+    text-align: center;
+    width: 30%; /* Adjust width if needed */
+}

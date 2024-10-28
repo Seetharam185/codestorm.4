@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 250px;
+            height: 380px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8)100%,rgba(0,0,0,0.8)50%);
+            position: absolute;
+            top: -20px;
+            left: 870px;
+            transform: translate(0%,-5%);
+            border-radius: 10px;
+            padding: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 170px;
+            display:block;
+            margin-left: -250px;
+        }
+        
+        .form h2{
+            width: 220px;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(150, 11, 11);
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+        
+        .form input{
+            width: 240px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid rgb(171, 9, 9);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+        
+        .form input:focus{
+            outline: none;
+        }
+        
+        ::placeholder{
+            color: #fff;
+            font-family: Arial;
+        }
+        
+        .btnn{
+            width: 240px;
+            height: 40px;
+            background: rgb(173, 3, 3);
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+        }
+        .btnn:hover{
+            background: #fff;
+            color: red;
+        }
+        .btnn a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .form .link{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .form .link a{
+            text-decoration: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form" data-aos="fade-up" data-aos-duration="1200" data-aos-display="800">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder="Enter Email Here">
+        <input type="password" name="" placeholder="Enter Password Here">
+        <button class="btnn" data-aos="fade-up" data-aos-duration="1200" data-aos-display="800"><a href="http://127.0.0.1:5500/fromto.html">Login</a></button>
+        
+        <p class="link">Don't have an account<br>
+        <a href="http://127.0.0.1:5500/signup2.html">Sign up </a> here</a></p>
+    </div>
+</body>
+</html>

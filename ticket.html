@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Coach Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .coach {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 20px;
+            width: 400px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .coach1 {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 20px;
+            width: 400px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .coach2 {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 20px;
+            width: 400px;
+            border-radius: 8px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .seat {
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .sleeper {
+            background-color: rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper1 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper2 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper3 {
+            background-color:rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper3:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper4 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper5 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper6 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper7 {
+            background-color: rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper7:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper8 {
+            background-color:rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper8:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper9 {
+            background-color:rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper9:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper10 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper11 {
+            background-color: rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper11:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper12 {
+            background-color: rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper12:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper13 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper14 {
+            background-color: grey; /* Green for Sleeper seats */
+        }
+        .sleeper15 {
+            background-color: rgb(77, 77, 181); /* Green for Sleeper seats */
+        }
+        .sleeper15:hover{
+            background-color: #4CAF50;
+        }
+        .sleeper15:focus{
+            background-color: #4CAF50;
+        }
+        .rac {
+            background-color: #4CAF50; /* Orange for RAC seats */
+        }
+        .merged-seat {
+            background: linear-gradient(135deg, grey 50%, grey 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat1 {
+            background: linear-gradient(135deg, grey 50%, grey 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat2 {
+            background: linear-gradient(135deg,  rgb(77, 77, 181)50%, rgb(77, 77, 181) 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat2:hover{
+            background: linear-gradient(135deg, #4CAF50 50%,#4CAF50 50%);
+        }
+        .merged-seat3 {
+            background: linear-gradient(135deg, grey 50%, grey 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat4 {
+            background: linear-gradient(135deg, rgb(77, 77, 181) 50%, rgb(77, 77, 181) 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat4:hover{
+            background: linear-gradient(135deg, #4CAF50 50%,#4CAF50 50%);
+        }
+        .merged-seat5 {
+            background: linear-gradient(135deg, rgb(77, 77, 181) 50%, rgb(77, 77, 181) 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat5:hover{
+            background: linear-gradient(135deg, #4CAF50 50%,#4CAF50 50%);
+        }
+        .merged-seat6 {
+            background: linear-gradient(135deg, grey 50%, grey 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat7 {
+            background: linear-gradient(135deg, rgb(77, 77, 181) 50%, rgb(77, 77, 181) 50%);
+            width: 230px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .merged-seat7:hover{
+            background: linear-gradient(135deg, #4CAF50 50%,#4CAF50 50%);
+        }
+        .label {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="coach">
+        <div class="label">S1 Compartment</div>
+        <div class="row">
+            <div class="seat sleeper">1</div>
+            <div class="seat sleeper1">2</div>
+            <div class="merged-seat">Sleeper(3,4)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper2">5</div>
+            <div class="seat sleeper3">6</div>
+            <div class="merged-seat1">Sleeper(7,8)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper4">9</div>
+            <div class="seat sleeper5">10</div>
+            <div class="merged-seat2">Sleeper(11,12)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper6">13</div>
+            <div class="seat sleeper7">14</div>
+            <div class="merged-seat3">Sleeper(15,16)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper8">17</div>
+            <div class="seat sleeper9">18</div>
+            <div class="merged-seat4">Sleeper(19,20)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper10">21</div>
+            <div class="seat sleeper11">22</div>
+            <div class="merged-seat5">Sleeper(23,24)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper12">25</div>
+            <div class="seat sleeper13">26</div>
+            <div class="merged-seat6">Sleeper(27,28)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper14">29</div>
+            <div class="seat sleeper15">30</div>
+            <div class="merged-seat7">Sleeper(31,32)</div>
+        </div>
+        <div class="label">Blue = Available Seats | Grey = Booked Seats | Sleeper Ticket Prize:₹400</div>
+    </div>
+    <div class="coach1">
+        <div class="label">S2 Compartment</div>
+        <div class="row">
+            <div class="seat sleeper">1</div>
+            <div class="seat sleeper1">2</div>
+            <div class="merged-seat">Sleeper(3,4)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper2">5</div>
+            <div class="seat sleeper3">6</div>
+            <div class="merged-seat1">Sleeper(7,8)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper4">9</div>
+            <div class="seat sleeper5">10</div>
+            <div class="merged-seat2">Sleeper(11,12)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper6">13</div>
+            <div class="seat sleeper7">14</div>
+            <div class="merged-seat3">Sleeper(15,16)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper8">17</div>
+            <div class="seat sleeper9">18</div>
+            <div class="merged-seat4">Sleeper(19,20)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper10">21</div>
+            <div class="seat sleeper11">22</div>
+            <div class="merged-seat5">Sleeper(23,24)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper12">25</div>
+            <div class="seat sleeper13">26</div>
+            <div class="merged-seat6">Sleeper(27,28)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper14">29</div>
+            <div class="seat sleeper15">30</div>
+            <div class="merged-seat7">Sleeper(31,32)</div>
+        </div>
+        <div class="label">Blue = Available Seats | Grey = Booked Seats | Sleeper Ticket Prize:₹400</div>
+    </div>
+    <div class="coach2">
+        <div class="label">AC Tier Compartment</div>
+        <div class="row">
+            <div class="seat sleeper">1</div>
+            <div class="seat sleeper1">2</div>
+            <div class="merged-seat">AC Tier(3,4)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper2">5</div>
+            <div class="seat sleeper3">6</div>
+            <div class="merged-seat1">AC Tier(7,8)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper4">9</div>
+            <div class="seat sleeper5">10</div>
+            <div class="merged-seat2">AC Tier(11,12)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper6">13</div>
+            <div class="seat sleeper7">14</div>
+            <div class="merged-seat3">AC Tier(15,16)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper8">17</div>
+            <div class="seat sleeper9">18</div>
+            <div class="merged-seat4">AC Tier(19,20)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper10">21</div>
+            <div class="seat sleeper11">22</div>
+            <div class="merged-seat5">AC Tier(23,24)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper12">25</div>
+            <div class="seat sleeper13">26</div>
+            <div class="merged-seat6">AC Tier(27,28)</div>
+        </div>
+        <div class="row">
+            <div class="seat sleeper14">29</div>
+            <div class="seat sleeper15">30</div>
+            <div class="merged-seat7">AC Tier(31,32)</div>
+        </div>
+        <div class="label">Blue = Available Seats | Grey = Booked Seats | AC Tier Ticket Prize:₹1200</div>
+    </div>
+</body>
+</html>
